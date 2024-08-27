@@ -11,11 +11,11 @@
 		989F51542C7DBE78002E9FBE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989F51532C7DBE78002E9FBE /* ContentView.swift */; };
 		989F51562C7DBE7A002E9FBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 989F51552C7DBE7A002E9FBE /* Assets.xcassets */; };
 		989F51592C7DBE7A002E9FBE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 989F51582C7DBE7A002E9FBE /* Preview Assets.xcassets */; };
-		989F515B2C7DBE7A002E9FBE /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989F515A2C7DBE7A002E9FBE /* Persistence.swift */; };
 		989F515E2C7DBE7A002E9FBE /* ToastsSwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 989F515C2C7DBE7A002E9FBE /* ToastsSwiftUI.xcdatamodeld */; };
 		989F51682C7DBE7A002E9FBE /* ToastsSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989F51672C7DBE7A002E9FBE /* ToastsSwiftUITests.swift */; };
 		989F51722C7DBE7A002E9FBE /* ToastsSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989F51712C7DBE7A002E9FBE /* ToastsSwiftUIUITests.swift */; };
 		989F51742C7DBE7A002E9FBE /* ToastsSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989F51732C7DBE7A002E9FBE /* ToastsSwiftUIUITestsLaunchTests.swift */; };
+		989F51822C7DBF18002E9FBE /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989F51812C7DBF18002E9FBE /* Toast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,13 +41,13 @@
 		989F51532C7DBE78002E9FBE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		989F51552C7DBE7A002E9FBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		989F51582C7DBE7A002E9FBE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		989F515A2C7DBE7A002E9FBE /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		989F515D2C7DBE7A002E9FBE /* ToastsSwiftUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToastsSwiftUI.xcdatamodel; sourceTree = "<group>"; };
 		989F51632C7DBE7A002E9FBE /* ToastsSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToastsSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		989F51672C7DBE7A002E9FBE /* ToastsSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastsSwiftUITests.swift; sourceTree = "<group>"; };
 		989F516D2C7DBE7A002E9FBE /* ToastsSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToastsSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		989F51712C7DBE7A002E9FBE /* ToastsSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastsSwiftUIUITests.swift; sourceTree = "<group>"; };
 		989F51732C7DBE7A002E9FBE /* ToastsSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastsSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		989F51812C7DBF18002E9FBE /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +98,10 @@
 		989F51502C7DBE78002E9FBE /* ToastsSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				989F51802C7DBF0D002E9FBE /* Helper */,
 				989F51512C7DBE78002E9FBE /* ToastsSwiftUIApp.swift */,
 				989F51532C7DBE78002E9FBE /* ContentView.swift */,
 				989F51552C7DBE7A002E9FBE /* Assets.xcassets */,
-				989F515A2C7DBE7A002E9FBE /* Persistence.swift */,
 				989F515C2C7DBE7A002E9FBE /* ToastsSwiftUI.xcdatamodeld */,
 				989F51572C7DBE7A002E9FBE /* Preview Content */,
 			);
@@ -131,6 +131,14 @@
 				989F51732C7DBE7A002E9FBE /* ToastsSwiftUIUITestsLaunchTests.swift */,
 			);
 			path = ToastsSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		989F51802C7DBF0D002E9FBE /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				989F51812C7DBF18002E9FBE /* Toast.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +271,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				989F515B2C7DBE7A002E9FBE /* Persistence.swift in Sources */,
 				989F51542C7DBE78002E9FBE /* ContentView.swift in Sources */,
+				989F51822C7DBF18002E9FBE /* Toast.swift in Sources */,
 				989F51522C7DBE78002E9FBE /* ToastsSwiftUIApp.swift in Sources */,
 				989F515E2C7DBE7A002E9FBE /* ToastsSwiftUI.xcdatamodeld in Sources */,
 			);
